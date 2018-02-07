@@ -31,6 +31,15 @@ class stirmemUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        // 1. given
+        let given = 1
+        
+        // 2. when
+        let when = given + 1
+        
+        // 3. then
+        XCTAssertEqual(when - given, 1, "UI Computing is wrong")
     }
     
 }

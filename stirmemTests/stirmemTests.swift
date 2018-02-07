@@ -24,6 +24,17 @@ class stirmemTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        // see: https://www.raywenderlich.com/150073/ios-unit-testing-and-ui-testing-tutorial
+        
+        // 1. given
+        let given = 1
+        
+        // 2. when
+        let when = given + 1
+        
+        // 3. then
+        XCTAssertEqual(when - given, 1, "Computing is wrong")
     }
     
     func testPerformanceExample() {
