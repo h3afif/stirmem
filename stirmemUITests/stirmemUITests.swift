@@ -33,13 +33,13 @@ class stirmemUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         // 1. given
-        let given = 1
+        let given = 6
         
         // 2. when
-        let when = given + 1
+        let when = given + 3*given
         
         // 3. then
-        XCTAssertEqual(when - given, 1, "UI Computing is wrong")
+        XCTAssertEqual(when - given/2, 21, "UI Computing is wrong")
     }
     
 }

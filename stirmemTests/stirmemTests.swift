@@ -28,13 +28,13 @@ class stirmemTests: XCTestCase {
         // see: https://www.raywenderlich.com/150073/ios-unit-testing-and-ui-testing-tutorial
         
         // 1. given
-        let given = 1
+        let given = 6
         
         // 2. when
-        let when = given + 1
+        let when = given + 3*given
         
         // 3. then
-        XCTAssertEqual(when - given, 1, "Computing is wrong")
+        XCTAssertEqual(when - given/2, 21, "Computing is wrong")
     }
     
     func testPerformanceExample() {
